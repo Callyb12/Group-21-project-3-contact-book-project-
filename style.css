@@ -1,0 +1,571 @@
+/* =========================================
+
+   GENERAL
+
+========================================= */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #667eea 0%,
+
+            #764ba2 50%,
+
+            #f093fb 100%
+
+        );
+
+    color: #222;
+
+    min-height: 100vh;
+
+    padding: 30px 0;
+
+}
+
+/* =========================================
+
+   MAIN CONTAINER
+
+========================================= */
+
+.container {
+
+    width: 92%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+/* =========================================
+
+   HEADER
+
+========================================= */
+
+.header {
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+}
+
+.logo {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+}
+
+.header h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+
+        0 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.header p {
+
+    font-size: 16px;
+
+    opacity: 0.9;
+
+}
+
+/* =========================================
+
+   CARDS
+
+========================================= */
+
+.card {
+
+    background: rgba(255, 255, 255, 0.96);
+
+    padding: 28px;
+
+    margin-bottom: 22px;
+
+    border-radius: 18px;
+
+    box-shadow:
+
+        0 15px 35px rgba(0, 0, 0, 0.15);
+
+}
+
+/* =========================================
+
+   SECTION TITLES
+
+========================================= */
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+.section-title span {
+
+    font-size: 25px;
+
+}
+
+.section-title h2 {
+
+    font-size: 22px;
+
+    color: #4b3f72;
+
+}
+
+/* =========================================
+
+   FORM
+
+========================================= */
+
+.form-group {
+
+    margin-bottom: 18px;
+
+}
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: #4b3f72;
+
+}
+
+input {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 2px solid #e1dded;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    background: #faf9ff;
+
+    transition: 0.2s;
+
+}
+
+input:focus {
+
+    outline: none;
+
+    border-color: #667eea;
+
+    background: white;
+
+    box-shadow:
+
+        0 0 0 3px rgba(102, 126, 234, 0.15);
+
+}
+
+/* =========================================
+
+   BUTTONS
+
+========================================= */
+
+.buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+button {
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+
+}
+
+button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* ADD / UPDATE */
+
+.primary-button {
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #667eea,
+
+            #764ba2
+
+        );
+
+    color: white;
+
+    box-shadow:
+
+        0 5px 15px rgba(102, 126, 234, 0.35);
+
+}
+
+.primary-button:hover {
+
+    box-shadow:
+
+        0 8px 20px rgba(102, 126, 234, 0.45);
+
+}
+
+/* CANCEL */
+
+.cancel-button {
+
+    background: #eeeeee;
+
+    color: #555;
+
+}
+
+/* =========================================
+
+   ERROR
+
+========================================= */
+
+.error {
+
+    color: #d93025;
+
+    font-size: 14px;
+
+    margin-top: 5px;
+
+    font-weight: bold;
+
+}
+
+/* =========================================
+
+   CONTACT HEADER
+
+========================================= */
+
+.contacts-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+.contacts-header .section-title {
+
+    margin-bottom: 0;
+
+}
+
+#contact-count {
+
+    background: #eee8ff;
+
+    color: #6645a5;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+/* =========================================
+
+   CONTACT CARDS
+
+========================================= */
+
+.contact-card {
+
+    position: relative;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #ffffff,
+
+            #f7f4ff
+
+        );
+
+    border: 1px solid #e4ddf7;
+
+    border-left: 5px solid #667eea;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin-bottom: 14px;
+
+    transition: 0.2s;
+
+}
+
+.contact-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+.contact-card h3 {
+
+    color: #493775;
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+
+}
+
+.contact-info {
+
+    color: #555;
+
+    margin: 6px 0;
+
+    font-size: 15px;
+
+}
+
+/* =========================================
+
+   CONTACT BUTTONS
+
+========================================= */
+
+.contact-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+}
+
+.edit-button {
+
+    background: #e7efff;
+
+    color: #315fc9;
+
+}
+
+.delete-button {
+
+    background: #ffe7e7;
+
+    color: #d93025;
+
+}
+
+/* =========================================
+
+   EMPTY MESSAGE
+
+========================================= */
+
+.empty-message {
+
+    text-align: center;
+
+    color: #777;
+
+    padding: 25px;
+
+}
+
+/* =========================================
+
+   FOOTER
+
+========================================= */
+
+footer {
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 13px;
+
+    opacity: 0.8;
+
+    margin-top: 10px;
+
+}
+
+/* =========================================
+
+   HIDDEN
+
+========================================= */
+
+.hidden {
+
+    display: none;
+
+}
+
+/* =========================================
+
+   MOBILE
+
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 20px 0;
+
+    }
+
+    .container {
+
+        width: 94%;
+
+    }
+
+    .header h1 {
+
+        font-size: 28px;
+
+    }
+
+    .logo {
+
+        font-size: 45px;
+
+    }
+
+    .card {
+
+        padding: 20px;
+
+    }
+
+    .contacts-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+    .buttons {
+
+        flex-direction: column;
+
+    }
+
+    .buttons button {
+
+        width: 100%;
+
+    }
+
+    .contact-actions {
+
+        flex-direction: column;
+
+    }
+
+    .contact-actions button {
+
+        width: 100%;
+
+    }
+
+}

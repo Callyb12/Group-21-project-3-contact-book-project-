@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Group Contact Book</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="logo">📒</div>
+
+            <h1>Group Contact Book</h1>
+
+            <p>
+
+                Store, search and manage our group contacts
+
+                with ease.
+
+            </p>
+
+        </header>
+
+        <!-- ADD / EDIT CONTACT -->
+
+        <section class="card form-card">
+
+            <div class="section-title">
+
+                <span>👤</span>
+
+                <h2 id="form-title">Add New Contact</h2>
+
+            </div>
+
+            <form id="contact-form">
+
+                <div class="form-group">
+
+                    <label for="full-name">
+
+                        Full Name
+
+                    </label>
+
+                    <input
+
+                        type="text"
+
+                        id="full-name"
+
+                        placeholder="Enter full name"
+
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="phone">
+
+                        📞 Phone Number
+
+                    </label>
+
+                    <input
+
+                        type="tel"
+
+                        id="phone"
+
+                        placeholder="e.g. 08012345678"
+
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">
+
+                        ✉️ Email Address
+
+                    </label>
+
+                    <input
+
+                        type="email"
+
+                        id="email"
+
+                        placeholder="e.g. member@gmail.com"
+
+                    >
+
+                </div>
+
+                <p
+
+                    id="error-message"
+
+                    class="error"
+
+                ></p>
+
+                <div class="buttons">
+
+                    <button
+
+                        type="submit"
+
+                        id="submit-button"
+
+                        class="primary-button"
+
+                    >
+
+                        ➕ Add Contact
+
+                    </button>
+
+                    <button
+
+                        type="button"
+
+                        id="cancel-button"
+
+                        class="cancel-button hidden"
+
+                    >
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- SEARCH -->
+
+        <section class="card search-card">
+
+            <div class="section-title">
+
+                <span>🔍</span>
+
+                <h2>Search Contacts</h2>
+
+            </div>
+
+            <input
+
+                type="search"
+
+                id="search-input"
+
+                placeholder="Search by name..."
+
+            >
+
+        </section>
+
+        <!-- CONTACTS -->
+
+        <section class="card contacts-card">
+
+            <div class="contacts-header">
+
+                <div class="section-title">
+
+                    <span>👥</span>
+
+                    <h2>Our Contacts</h2>
+
+                </div>
+
+                <span id="contact-count">
+
+                    0 contacts
+
+                </span>
+
+            </div>
+
+            <div id="contacts-list"></div>
+
+            <p
+
+                id="empty-message"
+
+                class="empty-message"
+
+            >
+
+                No contacts found.
+
+            </p>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>Group Contact Book • HTML • CSS • JavaScript</p>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
